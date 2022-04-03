@@ -1,0 +1,18 @@
+package day0330;
+
+public class Page128_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String temp ="";
+
+		for (int i = 1; i <= 50; i++) {
+			temp = toString(i);
+			if ( i%10 == 3 || i%10 == 6 || i%10 == 9) {
+				System.out.print("¦ ");
+			} else {
+				System.out.print(i + " ");
+			}
+		}
+	}
+}

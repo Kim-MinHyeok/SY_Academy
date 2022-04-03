@@ -1,0 +1,27 @@
+package day0331;
+
+import java.util.Scanner;
+
+public class DoWhileTest01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int num,i=1,j=1;
+		
+		System.out.print("어디까지 더할까요? : ");
+		num = sc.nextInt(); 
+		
+		while (i <= row) {
+			while (j <= col) {
+				System.out.print("*");
+				j++;
+			}
+			System.out.println("");
+			i++;
+			j=1;
+		}
+
+	}
+
+}

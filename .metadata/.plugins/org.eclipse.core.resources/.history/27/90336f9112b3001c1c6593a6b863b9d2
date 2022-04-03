@@ -1,0 +1,56 @@
+package day0403;
+
+import java.util.Scanner;
+
+public class Exam {
+	char[] answer = {'a', 'c', 'd', 'b', 'c', 'a', 'a', 'd', 'b', 'b'};
+	
+	public boolean isPassed(char[] studentAnswer) {
+		boolean passed = false;
+		
+		int correct = correctAnswers(studentAnswer);
+		
+		if (correct > 7) {
+			passed = true;
+		}
+		
+		return passed;
+	}
+	
+	public int correctAnswers(char[] studentAnswer) {
+		int correct = 0;
+		
+		for (int i=0; i<answer.length; i++) {
+			if (answer[i] == studentAnswer[i]) {
+				correct += 1;
+			}
+		}
+		
+		return correct;
+	}
+
+	public int incorrectAnswers(char[] studentAnswer) {
+		int incorrect = 10 - correctAnswers(studentAnswer);
+		
+		return incorrect;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		char[] studentAnswer = new char[10];
+		
+		for (int i=0; i<studentAnswer.length;) {
+			System.out.print(i+1+"번 정답 : ");
+			studentAnswer[i] = sc.next();
+		}
+		
+		System.out.println("");
+		
+		System.out.println("1년 동안의 전체 사용 금액 : " + (int)total(cardUse) + "원");
+		System.out.println("월별 평균 사용 금액 : " + (int)average(cardUse) + "원");
+		System.out.println("가장 지출이 많았던 월 : " + max(cardUse) + "월");
+		System.out.println("가장 지출이 적었던 월 : " + min(cardUse) + "월");
+	}
+}

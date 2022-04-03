@@ -1,0 +1,14 @@
+package day0403;
+
+public class arrayCalculate {
+	public static int getTotal(int[] array) {
+		int total=0;
+		return total;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

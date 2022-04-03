@@ -1,0 +1,55 @@
+package day0329;
+
+import java.util.Scanner;
+
+public class HomeWork {
+	public static void main(String []args) {
+		Scanner sc = new Scanner(System.in);
+		int number;
+		String korNumber = "";
+		
+		System.out.println("0~99 사이의 숫자를 입력하세요 : ");
+		number = sc.nextInt();
+		
+		if (number / 10 == 1) {
+			korNumber += "십"; 
+		} else if (number % 10 == 2) {
+			korNumber += "이십"; 
+		} else if (number % 10 == 3) {
+			korNumber += "삼십"; 
+		} else if (number % 10 == 4) {
+			korNumber += "사십"; 
+		} else if (number % 10 == 5) {
+			korNumber += "오십"; 
+		} else if (number % 10 == 6) {
+			korNumber += "육십"; 
+		} else if (number % 10 == 7) {
+			korNumber += "칠십"; 
+		} else if (number % 10 == 8) {
+			korNumber += "팔십"; 
+		} else if (number % 10 == 9) {
+			korNumber += "구십"; 
+		}
+
+		if (number / 10 == 1) {
+			korNumber += "십"; 
+		} else if (number % 10 == 2) {
+			korNumber += "이십"; 
+		} else if (number % 10 == 3) {
+			korNumber += "삼십"; 
+		} else if (number % 10 == 4) {
+			korNumber += "사십"; 
+		} else if (number % 10 == 5) {
+			korNumber += "오십"; 
+		} else if (number % 10 == 6) {
+			korNumber += "육십"; 
+		} else if (number % 10 == 7) {
+			korNumber += "칠십"; 
+		} else if (number % 10 == 8) {
+			korNumber += "팔십"; 
+		} else if (number % 10 == 9) {
+			korNumber += "구십"; 
+		}
+		
+	}
+}

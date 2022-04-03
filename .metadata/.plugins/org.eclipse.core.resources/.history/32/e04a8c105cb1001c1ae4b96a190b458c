@@ -1,0 +1,20 @@
+package homework;
+
+public class MaxTest02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] data = {"홍길동","유관순","이순신","김유신","강감찬"};
+		int[] score = {40,70,30,100,90};
+		int maxIndex = 0;
+		
+		for (int a=1; a < data.length; a++) {
+			if (data[a] > max) {
+				max = data[a];
+			}
+		}
+		
+		System.out.println(max);
+	}
+
+}

@@ -1,0 +1,19 @@
+package day0403;
+
+public class CreditCard {
+	public void total() {
+		
+	}
+
+	public void average() {
+		
+	}
+	
+	public void max() {
+		
+	}
+	
+	public void min() {
+		
+	}
+}

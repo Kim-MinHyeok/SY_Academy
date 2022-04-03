@@ -1,0 +1,8 @@
+package day0403;
+import day0403.CreditCard;
+import day0403.Exam;
+import java.util.Scanner;
+
+public class main {
+
+}

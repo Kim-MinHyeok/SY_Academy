@@ -1,0 +1,27 @@
+package day0331;
+
+import java.util.Scanner;
+
+public class WhileTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int N, i=0, sum=0;
+		
+		System.out.print("정수 N을 입력하세요 : ");
+		N = sc.nextInt();
+		
+		while (i<N) {
+			if (i == N) {
+				System.out.print(""); break;
+			} else
+				System.out.print(N-i);
+			sum +=i;
+			System.out.print("*");
+			i++;
+		}
+
+	}
+
+}

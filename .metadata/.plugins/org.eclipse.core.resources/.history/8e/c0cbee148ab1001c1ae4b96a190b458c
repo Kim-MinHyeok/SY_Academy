@@ -1,0 +1,15 @@
+package day0401;
+
+public class MethodTest09 {
+	public static int[] comparison (int[] a) {
+		return a;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] a = new int[3];
+		
+		System.out.println(comparison(a));
+	}
+
+}

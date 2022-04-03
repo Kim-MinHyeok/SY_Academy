@@ -1,0 +1,12 @@
+package day0403;
+
+public class Exam {
+	public boolean isPassed() {
+		boolean passed = true;
+		return passed;
+	}
+	
+	public void correctAnswers() {}
+
+	public void incorrectAnswers() {}
+}

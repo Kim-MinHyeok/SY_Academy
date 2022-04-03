@@ -1,0 +1,18 @@
+package day0328;
+
+import java.util.Scanner;
+
+public class change {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("πﬁ¿∫ µ∑ : ");
+		System.out.print("ªÛ«∞ ∞°∞› : ");
+		System.out.print("∫Œ∞°ºº : ");
+		System.out.print("¿‹µ∑ : ");
+
+	}
+
+}

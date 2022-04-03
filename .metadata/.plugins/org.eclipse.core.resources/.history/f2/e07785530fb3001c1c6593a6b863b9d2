@@ -1,0 +1,20 @@
+package day0403;
+
+public class Exam {
+	public boolean isPassed(int[] answer) {
+		boolean passed = false;
+		return passed;
+	}
+	
+	public int correctAnswers(int[] answer) {
+		int correct=0;
+		
+		return correct;
+	}
+
+	public int incorrectAnswers(int[] answer) {
+		int incorrect=0;
+		
+		return incorrect;
+		}
+}

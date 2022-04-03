@@ -1,0 +1,13 @@
+package day0329;
+
+public class SwapTest02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String cup1 = "사이다";
+		String cup2 = "콜라";
+		
+		
+	}
+
+}

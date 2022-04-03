@@ -1,0 +1,49 @@
+package day0403;
+
+public class homework {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] studentNumbers = new int[30];				// exercise 1
+		double[] profits = new double[100];
+		char[] proverbs = new char[2000];
+		double[] doubleArray = {1.2, 3.2, 6.7};
+		
+		
+		
+//		int[] numbers = new numbers[100];				// exercise 2
+		int[] numbers = new int[100];
+//		double rainfalls[100] = new double();
+		double[] rainfalls = new double[100];
+		
+		
+		
+		int[] employees = new int[5];					// exercise 3
+//		유효 인덱스 범위 = 0 ~ 4;
+//		인덱스 5 접근시 배열범위초과 오류 발생
+		
+		
+		
+		int[] numbers2 = new int[5];
+		for (int i=0; i<5; i++) {
+			numbers2[i] = i+1;
+		}
+		for (int i: numbers2) {
+			System.out.println(numbers2[i]);
+		}
+		
+		String[] numbers3 = {"a","a","a","a"};
+		
+		for (int i=0; i<5; i++) {
+		}
+		
+		for (String i: numbers3) {
+			System.out.println(i);
+		}
+		
+//		for (int i=0; i<numbers2.length;i++) {
+//			System.out.println(numbers2[i]);
+//		}
+	}
+
+}

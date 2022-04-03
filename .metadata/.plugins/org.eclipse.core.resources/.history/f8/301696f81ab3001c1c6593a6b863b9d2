@@ -1,0 +1,67 @@
+package day0403;
+
+import java.util.Scanner;
+
+public class Sales {
+	static String[] teamName = {"마케팅", "영업", "개발", "연구", "생산"};
+	
+	public static void teamSeasonSale(int[][] arr) {
+		for(int i=0; i<arr.length; i++) {
+			for(int j=0; j<arr[i].length; j++) {
+				System.out.println(teamName[i]+"부의 "+j+"분기 매출액 : " + arr[i][j] + "원");
+			}
+		}
+	}
+
+	public static void companySeasonSale(int[][] arr) {
+		int total = 0;
+		for(int i=0; i<4; i++) {
+			for(int j=0; j<arr.length; j++) {
+				total += arr[j][i];
+			}
+			System.out.println((i+1)+"분기의 매출액 : " + total + "원");
+			total = 0;
+		}
+	}
+	
+	public static void companySeasonAverage(int[][] arr) {
+	}
+	
+	public static int min(int[][] arr) {
+		int min=0;
+	
+//		for (int i=1; i<arr.length; i++) {
+//			if (arr[i] < arr[i-1]) {
+//				min = i;
+//			}
+//		}
+		
+		return min+1;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int[][] sale = new int[5][4];
+		
+		for (int i=0; i<sale.length; i++) {
+			for (int j=0; j<sale[i].length;) {
+				System.out.print(teamName[i]+"부의 "+(j+1)+"분기 매출액을 입력하세요 : ");
+				sale[i][j] = sc.nextInt();
+				if (sale[i][j] < 0) {
+					System.out.println("음수가 입력되었습니다. 다시 입력하세요.");
+				} else {
+					j++;
+				}
+			}
+		}
+		
+		System.out.println("");
+		teamSeasonSale(sale);
+		System.out.println("");
+		companySeasonSale(sale);
+		System.out.println("");
+		companySeasonAverage(sale);
+	}
+}

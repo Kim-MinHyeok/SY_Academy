@@ -1,0 +1,27 @@
+package day0401;
+
+public class MethodTest07 {
+	public static int comparison (int n) {
+		int r=0;
+		for (int i=0; i<n; i++) {
+			r +=i;
+		}
+		
+		return r;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		
+		a = comparison(1,3);
+		System.out.println(a);
+		
+		a = comparison(3,2);
+		System.out.println(a);
+		
+		a = comparison(5,9);
+		System.out.println(a);
+	}
+
+}

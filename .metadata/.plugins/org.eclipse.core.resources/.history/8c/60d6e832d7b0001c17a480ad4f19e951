@@ -1,0 +1,20 @@
+package homework;
+
+import java.util.Random;
+
+public class FourChoice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] answer = new int[10];
+		
+		Random r = new Random();
+		
+		for (int i = 0; i < answer.length;) {
+			int n = r.nextInt(4) + 1;
+		}
+		
+		System.out.println(r);
+	}
+
+}

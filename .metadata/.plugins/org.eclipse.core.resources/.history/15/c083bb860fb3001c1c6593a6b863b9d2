@@ -1,0 +1,49 @@
+package day0403;
+
+public class CreditCard {
+	public double total(double[] arr) {
+		double sum = 0;
+		
+		for(double i: arr) {
+			sum += i;
+		}
+		
+		return sum;
+	}
+
+	public double average(double[] arr) {
+		double avg=0;
+		
+		for(double i: arr) {
+			avg += i;
+		}
+		
+		avg = avg/arr.length;
+		
+		return avg;
+	}
+	
+	public int max(double[] arr) {
+		int max=0;
+	
+		for (int i=1; i<arr.length; i++) {
+			if (arr[i] > arr[i-1]) {
+				max = i;
+			}
+		}
+		
+		return max;
+	}
+	
+	public int min(double[] arr) {
+		int min=0;
+	
+		for (int i=1; i<arr.length; i++) {
+			if (arr[i] < arr[i-1]) {
+				min = i;
+			}
+		}
+		
+		return min;
+	}
+}

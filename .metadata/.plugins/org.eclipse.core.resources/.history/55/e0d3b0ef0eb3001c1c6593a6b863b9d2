@@ -1,0 +1,9 @@
+package day0403;
+
+public class Exam {
+	public void isPassed() {}
+	
+	public void correctAnswers() {}
+
+	public void incorrectAnswers() {}
+}

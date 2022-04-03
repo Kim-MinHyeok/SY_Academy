@@ -1,0 +1,18 @@
+package homework;
+
+public class MaxTest01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] data = {-9,-8,-5,-15,-7};
+		
+		int max = data[0];
+		
+		for (int a=1; a<data.length-1; a++) {
+			if (data[a] < data[a+1]) {
+				max = data[a+1];
+			}
+		}
+	}
+
+}

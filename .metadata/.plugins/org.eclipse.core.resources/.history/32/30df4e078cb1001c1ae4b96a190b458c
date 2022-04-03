@@ -1,0 +1,21 @@
+package day0401;
+
+public class MethodTest11 {
+	public static int getScoreName (int[] num) {
+		int avg=0;
+		
+		for (int i=0;i<num.length;i++) {
+		}
+		
+		return avg;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] name = {"뉴턴","아인슈타인","폰노이만"};
+		int[] score = {92,96,100};
+		
+		System.out.println(getScoreName(name,score));
+	}
+
+}

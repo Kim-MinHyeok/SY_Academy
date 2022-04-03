@@ -1,0 +1,27 @@
+package day0403;
+import day0403.CreditCard;
+import day0403.Exam;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		double[] cardUse = new double[12];
+		
+		for (int i=0; i<cardUse.length;) {
+			System.out.println(i+1+"월 카드 사용 금액을 입력하세요 : ");
+			cardUse[i] = sc.nextDouble();
+			if (cardUse[i] < 0) {
+				System.out.println("음수가 입력되었습니다. 다시 입력하세요.");
+			} else {
+				i++;
+			}
+		}
+		
+		CreditCard.total(cardUse);
+	}
+
+}

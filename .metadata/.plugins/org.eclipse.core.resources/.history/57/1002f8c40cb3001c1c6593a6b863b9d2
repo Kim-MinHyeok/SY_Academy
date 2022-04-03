@@ -1,0 +1,21 @@
+package day0403;
+
+public class CreditCard {
+	public double[] total(double[] arr) {
+		return arr;
+	}
+
+	public int average(double[] arr) {
+		int avg=0;
+		return avg;
+	}
+	
+	public int max(double[] arr) 
+		double max=arr[0];
+		return ;
+	}
+	
+	public void min(double[] arr) {
+		double min=arr[0];
+	}
+}

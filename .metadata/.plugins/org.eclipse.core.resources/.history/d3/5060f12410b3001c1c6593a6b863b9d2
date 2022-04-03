@@ -1,0 +1,35 @@
+package day0403;
+
+public class Exam {
+	char[] answer = {'a', 'c', 'd', 'b', 'c', 'a', 'a', 'd', 'b', 'b'};
+	
+	public boolean isPassed(int[] studentAnswer) {
+		boolean passed = false;
+		
+		int correct = correctAnswers(studentAnswer);
+		
+		if (correct > 7) {
+			passed = true;
+		}
+		
+		return passed;
+	}
+	
+	public int correctAnswers(int[] studentAnswer) {
+		int correct = 0;
+		
+		for (int i=0; i<answer.length; i++) {
+			if (answer[i] == studentAnswer[i]) {
+				correct += 1;
+			}
+		}
+		
+		return correct;
+	}
+
+	public int incorrectAnswers(int[] studentAnswer) {
+		int incorrect = 10 - correctAnswers(studentAnswer);
+		
+		return incorrect;
+		}
+}

@@ -1,0 +1,16 @@
+package day0403;
+
+import java.util.Scanner;
+
+public class CountLetter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int[] count = new int[26];
+		
+		System.out.println("문자열을 입력하세요 : ");
+
+	}
+
+}

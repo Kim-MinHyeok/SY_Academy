@@ -1,0 +1,20 @@
+package homework;
+
+public class Page130_13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] name = {"Clubs","Diamonds","Hearts","Spads"};
+		String[] num = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
+		int[] pickedName = new int[4];
+		int[] pickedNum = new int[13];
+		
+		for(int i=0; i<5; i++) {
+			pickedName[i] = (int)(Math.random() * 4);
+			pickedNum[i] = (int)(Math.random() * 13);
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package day0403;
+
+import java.util.Scanner;
+
+public class TestArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int[] array = new int[scan.nextInt()];
+
+	}
+
+}
